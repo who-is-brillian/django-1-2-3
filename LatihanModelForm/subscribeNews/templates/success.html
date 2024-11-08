@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="alert alert-success text-center" role="alert">
+                <h4 class="alert-heading">Subscription Successful!</h4>
+                <p>Thank you for subscribing to our newsletter. Stay tuned for the latest updates!</p>
+                <hr>
+                <p class="mb-0">Return to the <a href="{% url 'subscribe' %}" class="alert-link">subscription page</a> or explore more on our website.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

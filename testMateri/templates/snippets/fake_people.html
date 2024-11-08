@@ -1,0 +1,20 @@
+{% load static %}
+<section style="margin: 10px 100px 10px 270px;">
+    <h1>Daftar Pengguna</h1>
+    <table border="1">
+        <tr class="border-2 text-center">
+            <th class=" border-2 px-4 py-2 ">Nama</th>
+            <th class=" border-2 px-4 py-2">Alamat</th>
+            <th class=" border-2 px-4 py-2">Email</th>
+            <th class=" border-2 px-4 py-2">Birth Date</th>
+        </tr>
+        {% for user in users %}
+        <tr class="border-2">
+            <td class="border-2 px-4 py-2 ">{{ user.name }}</td>  <!-- Menggunakan 'user' di sini -->
+            <td class="border-2 px-4 py-2">{{ user.address }}</td>
+            <td class="border-2 px-4 py-2">{{ user.email }}</td>
+            <td class="border-2 px-4 py-2">{{ user.date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</section>
